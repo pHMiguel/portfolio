@@ -45,7 +45,7 @@ const Home = () => {
                     opacity: "0.5",
                   }}
                 >
-                  //AKA: "pH.";
+                  {"//"}AKA: "pH.";
                 </p>
                 <p
                   style={{
@@ -64,7 +64,7 @@ const Home = () => {
                     opacity: "0.5",
                   }}
                 >
-                  //FATEC Mogi das Cruzes - Análise e Desenvolvimento de
+                  {"//"}FATEC Mogi das Cruzes - Análise e Desenvolvimento de
                   Sistemas
                 </p>
                 <p
@@ -93,7 +93,7 @@ const Home = () => {
                     opacity: "0.5",
                   }}
                 >
-                  //Meu objetivo com esse portifólio é encapsular todas as
+                  {"//"}Meu objetivo com esse portifólio é encapsular todas as
                   minhas qualidades,
                   <br /> sendo produtor musical, fotógrafo ou desenvolvedor de
                   uma maneira simples e intuitiva.
@@ -101,11 +101,14 @@ const Home = () => {
               </div>
             </div>
             <div className={styles.profileCard}>
-              <img
-                className={styles.profilePicture}
-                src="/assets/images/profile_pic.jpg"
-                alt="Profile Picture"
-              />
+              <picture>
+                <img
+                  className={styles.profilePicture}
+                  src="/assets/images/profile_pic.jpg"
+                  alt="Profile Picture"
+                />
+              </picture>
+
               <div className={styles.buttonArea}>
                 <a
                   href="https://www.instagram.com/_ph_miguel/"
