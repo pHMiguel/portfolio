@@ -12,15 +12,17 @@ const Navbar = () => {
         <Link href="/music" className={styles.categorySelector}>
           Discografia.
         </Link>
-        <Link href="/photo" className={styles.categorySelector}>
+        <div className={styles.categorySelector}>
           Fotografia.
-        </Link>
+          <span className={styles.span}>Página em Desenvolvimento</span>
+        </div>
         <Link href="/video" className={styles.categorySelector}>
           Vídeografia.
         </Link>
-        <Link href="/dev" className={styles.categorySelector}>
+        <div className={styles.categorySelector}>
           Desenvolvimento.
-        </Link>
+          <span className={styles.span}>Página em Desenvolvimento</span>
+        </div>
       </div>
     </div>
   );
