@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 
 import styles from "./video.module.scss";
-
-import { Navbar } from "@/components";
 
 const Video = () => {
   const [showContent, setShowContent] = useState(false);
@@ -17,49 +14,39 @@ const Video = () => {
   }, []);
 
   return (
-    <Container className={styles.container} fluid>
-      <Navbar />
-      <video
-        src="../assets/videos/bg_video.mp4"
-        autoPlay
-        loop
-        muted
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-      />
+    <div className={styles.container}>
       {showContent && (
-        <Row className={styles.contentArea}>
-          <h2> Edições de Vídeo</h2>
-          <Row className={styles.videoArea}>
-            <Col>
+        <div className={styles.wrapper}>
+          <div className={styles.videoTitle}>
+            <h1 style={{ fontSize: " 2rem" }}>Edições de Vídeo</h1>
+          </div>
+          <div className={styles.contentArea}>
+            <div className={styles.videoArea}>
               <iframe
-                width="560"
-                height="315"
+                width="90%"
+                height="90%"
                 src="https://www.youtube.com/embed/z9lJh5dzzxI?si=PEKjTRHt_0JlKwbQ"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
-              ></iframe>
-            </Col>
-            <Col>
+              />
+            </div>
+            <div className={styles.videoArea}>
               <iframe
-                width="560"
-                height="315"
+                width="90%"
+                height="90%"
                 src="https://www.youtube.com/embed/Jc1lr0EC6Rk?si=RtaYXCNVW-TUSlVv"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
-              ></iframe>
-            </Col>
-          </Row>
-        </Row>
+              />
+            </div>
+          </div>
+        </div>
       )}
-    </Container>
+    </div>
   );
 };
 

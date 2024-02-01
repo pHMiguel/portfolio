@@ -1,33 +1,28 @@
 import styles from "./Navbar.module.scss";
-import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <Container className={styles.container} fluid>
-      <Row>
-        <Col as={"h2"} className={styles.name}>
-          <Link href="/home">Aphonso Miguel.</Link>
-        </Col>
-      </Row>
+    <div className={styles.container}>
+      <Link href="/home" className={styles.name}>
+        Aphonso Miguel.
+      </Link>
 
-      <Row className={styles.header}>
-        <Col className={styles.categorySelector}>
-          <Link href="/music">Discografia.</Link>
-        </Col>
-        <Col className={styles.categorySelector}>
-          <Link href="/photo">Fotografia.</Link>
-        </Col>
-        <Col className={styles.categorySelector}>
-          <Link href="/video">Vídeografia.</Link>
-        </Col>
-        <Col className={styles.categorySelector}>
-          <Link href="/dev">Desenvolvimento.</Link>
-        </Col>
-      </Row>
-
-      <Row className={styles.about}></Row>
-    </Container>
+      <div className={styles.header}>
+        <Link href="/music" className={styles.categorySelector}>
+          Discografia.
+        </Link>
+        <Link href="/photo" className={styles.categorySelector}>
+          Fotografia.
+        </Link>
+        <Link href="/video" className={styles.categorySelector}>
+          Vídeografia.
+        </Link>
+        <Link href="/dev" className={styles.categorySelector}>
+          Desenvolvimento.
+        </Link>
+      </div>
+    </div>
   );
 };
 

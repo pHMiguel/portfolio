@@ -1,55 +1,49 @@
 .container {
   display: flex;
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contentArea {
-  position: absolute;
-  width: 70%;
-  height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20vh;
+  gap: 5rem;
 }
 
-.about {
+.aboutTextWrapper {
+  width: 100%;
+  min-height: 352px;
+  max-height: 724px;
+}
+
+.aboutTitle {
+  display: flex;
+  width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  animation: fadeIn 0.5s ease;
+}
+
+.aboutTitle h1 {
+  margin: 0;
+}
+
+.aboutText {
   display: flex;
   flex-direction: column;
-  width: auto;
-}
-
-.about p {
   overflow: hidden;
-  animation: textFade 1.5s ease;
-  white-space: nowrap;
-}
-
-@keyframes textFade {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.about h1 {
-  animation: titleFade 1s ease;
-}
-
-@keyframes titleFade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .profileCard {
@@ -60,15 +54,86 @@
   background: rgba(255, 255, 255, 0);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.4px);
-  -webkit-backdrop-filter: blur(4.4px);
-  border: 1px solid rgba(255, 255, 255, 1);
-  animation: cardFade 1s ease;
-  width: 30%;
-  height: 70%;
+
+  backdrop-filter: blur(4px);
+  border: 1px solid rgb(255, 255, 255);
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem;
+  gap: 1rem;
 }
 
-@keyframes cardFade {
+.profilePicture {
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid rgb(255, 255, 255);
+  margin: 2px;
+}
+
+.buttonArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1280px) {
+  .contentArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .aboutTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .aboutText {
+    animation: textFadeHeight 1.5s ease;
+  }
+
+  .aboutText p {
+    text-align: center;
+  }
+
+  .profileCard {
+    min-width: 40vw;
+    animation: fadeIn 3s cubic-bezier(0.35, 0, 0.35, 0);
+  }
+}
+
+@media (min-width: 1280px) {
+  .aboutText {
+    animation: textFadeWidth 2s ease;
+    white-space: nowrap;
+  }
+
+  .profileCard {
+    animation: fadeIn 2s ease;
+  }
+}
+
+@keyframes textFadeWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -77,22 +142,11 @@
   }
 }
 
-.profilePicture {
-  max-width: 90%;
-  height: auto;
-  border-radius: 50%;
-  border: 4px solid rgb(255, 255, 255);
-}
-
-.buttonArea {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@keyframes textFadeHeight {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 724px;
+  }
 }

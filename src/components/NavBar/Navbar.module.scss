@@ -1,16 +1,10 @@
 .container {
-  position: absolute;
-  top: 0;
   display: flex;
-  width: 70%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   animation: fade 2s ease;
-
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  padding-right: 0 !important;
-  padding-left: 0 !important;
+  margin-bottom: 1.5rem;
 }
 @keyframes fade {
   from {
@@ -26,24 +20,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 10vh;
-  font-size: 2vw;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: normal;
+  overflow-wrap: break-word;
+  margin: 2rem;
 }
 
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 7vh;
+  width: 70%;
+  height: auto;
   background: rgba(255, 255, 255, 0);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.4px);
-  -webkit-backdrop-filter: blur(4.4px);
-  border: 1px solid rgba(255, 255, 255, 1);
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 
 .categorySelector {
@@ -60,11 +52,11 @@
   content: "";
   position: absolute;
   width: 40%;
+  background-color: white;
   transform: scaleX(0);
   height: 2px;
-  bottom: 0;
+  bottom: -0.5rem;
   left: 1;
-  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -76,4 +68,21 @@
 .categorySelector:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media (max-width: 768px) {
+  .name {
+    margin: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .aboutText {
+    white-space: break;
+  }
 }
