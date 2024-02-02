@@ -38,6 +38,7 @@
   width: 30%;
   opacity: 0.3;
   transition: linear 1s;
+  text-align: center;
 }
 
 .categorySelector::after {
@@ -124,6 +125,7 @@
     left: auto;
     height: auto;
     width: 200%;
+    font-size: 0.8rem;
   }
 
   .aboutText {

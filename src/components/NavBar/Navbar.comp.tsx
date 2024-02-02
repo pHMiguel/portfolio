@@ -14,14 +14,14 @@ const Navbar = () => {
         </Link>
         <div className={styles.categorySelector}>
           Fotografia.
-          <span className={styles.span}>Página em Desenvolvimento</span>
+          <span className={styles.span}>Em Desenvolvimento</span>
         </div>
         <Link href="/video" className={styles.categorySelector}>
           Vídeografia.
         </Link>
         <div className={styles.categorySelector}>
-          Desenvolvimento.
-          <span className={styles.span}>Página em Desenvolvimento</span>
+          Dev Projects.
+          <span className={styles.span}>Em Desenvolvimento</span>
         </div>
       </div>
     </div>
