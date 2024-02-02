@@ -73,7 +73,7 @@ const Home = () => {
                     fontSize: " 2rem",
                   }}
                 >
-                  Short-Term-Objectives: "Estagiário";
+                  Short-Term-Objectives: "Dev Trainee";
                 </p>
                 <p
                   style={{
