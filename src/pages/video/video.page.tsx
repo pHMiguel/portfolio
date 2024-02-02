@@ -18,7 +18,7 @@ const Video = () => {
       {showContent && (
         <div className={styles.wrapper}>
           <div className={styles.videoTitle}>
-            <h1 style={{ fontSize: " 2rem" }}>Edições de Vídeo</h1>
+            <h1 style={{ fontSize: " 2rem" }}>Video Projects</h1>
           </div>
           <div className={styles.contentArea}>
             <div className={styles.videoArea}>

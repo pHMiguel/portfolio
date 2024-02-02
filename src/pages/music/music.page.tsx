@@ -22,7 +22,7 @@ const Music = () => {
             <div className={styles.playlistArea}>
               <h1 style={{ fontSize: " 2rem" }}>A e s t a s</h1>
               <p style={{ fontSize: " 1rem", opacity: "0.5" }}>
-                Conta Principal
+                Main Profile
               </p>
               <ReactPlayer
                 url="https://soundcloud.com/ph_miguel/tracks"
@@ -33,7 +33,7 @@ const Music = () => {
             <div className={styles.playlistArea}>
               <h1 style={{ fontSize: " 2rem" }}>pH</h1>
               <p style={{ fontSize: " 1rem", opacity: "0.5" }}>
-                Conta Secundária
+                Secondary Profile
               </p>
               <ReactPlayer
                 url="https://soundcloud.com/miguel_ph/tracks"

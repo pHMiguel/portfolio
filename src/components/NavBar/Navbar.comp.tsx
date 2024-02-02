@@ -10,14 +10,14 @@ const Navbar = () => {
 
       <div className={styles.header}>
         <Link href="/music" className={styles.categorySelector}>
-          Discografia.
+          Discography.
         </Link>
         <div className={styles.categorySelector}>
-          Fotografia.
+          Photo Album.
           <span className={styles.span}>Em Desenvolvimento</span>
         </div>
         <Link href="/video" className={styles.categorySelector}>
-          Vídeografia.
+          Videography.
         </Link>
         <div className={styles.categorySelector}>
           Dev Projects.

@@ -64,8 +64,7 @@ const Home = () => {
                     opacity: "0.5",
                   }}
                 >
-                  {"//"}FATEC Mogi das Cruzes - Análise e Desenvolvimento de
-                  Sistemas
+                  {"//"}FATEC Mogi das Cruzes - System Analysis & Development
                 </p>
                 <p
                   style={{
@@ -93,10 +92,10 @@ const Home = () => {
                     opacity: "0.5",
                   }}
                 >
-                  {"//"}Meu objetivo com esse portifólio é encapsular todas as
-                  minhas qualidades,
-                  <br /> sendo produtor musical, fotógrafo ou desenvolvedor de
-                  uma maneira simples e intuitiva.
+                  {"//"}My goal with this portfolio is to encapsulate all my
+                  qualities,
+                  <br /> like being a music producer, photographer or a software
+                  developer in a simple and intuitive way. More on the Future.
                 </p>
               </div>
             </div>
