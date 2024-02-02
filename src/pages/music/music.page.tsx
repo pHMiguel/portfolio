@@ -7,7 +7,7 @@ const Music = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const delay = 500;
+    const delay = 700;
     const timeoutId = setTimeout(() => {
       setShowContent(true);
     }, delay);
@@ -21,9 +21,7 @@ const Music = () => {
           <div className={styles.contentArea}>
             <div className={styles.playlistArea}>
               <h1 style={{ fontSize: " 2rem" }}>A e s t a s</h1>
-              <p style={{ fontSize: " 1rem", opacity: "0.5" }}>
-                Main Profile
-              </p>
+              <p style={{ fontSize: " 1rem", opacity: "0.5" }}>Main Profile</p>
               <ReactPlayer
                 url="https://soundcloud.com/ph_miguel/tracks"
                 width={"90%"}

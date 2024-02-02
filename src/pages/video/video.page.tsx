@@ -6,7 +6,7 @@ const Video = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const delay = 500;
+    const delay = 700;
     const timeoutId = setTimeout(() => {
       setShowContent(true);
     }, delay);

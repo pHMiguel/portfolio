@@ -54,7 +54,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  opacity: 0.3;
   transition: linear 0.7s;
 }
 
@@ -77,13 +76,8 @@
   transform-origin: center;
 }
 
-.categorySelector:hover {
-  opacity: 1;
-}
-
 @media (max-width: 1280px) {
   .backgroundButton {
     padding: 0.3rem;
-    margin: 0 0.5rem 0.5rem 0;
   }
 }

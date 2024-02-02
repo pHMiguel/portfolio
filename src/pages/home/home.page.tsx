@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 
 import styles from "./home.module.scss";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -11,7 +13,7 @@ const Home = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const delay = 1000;
+    const delay = 700;
     const timeoutId = setTimeout(() => {
       setShowContent(true);
     }, delay);
@@ -100,13 +102,13 @@ const Home = () => {
               </div>
             </div>
             <div className={styles.profileCard}>
-              <picture>
-                <img
-                  className={styles.profilePicture}
-                  src="/assets/images/profile_pic.jpg"
-                  alt="Profile Picture"
-                />
-              </picture>
+              <LazyLoadImage
+                className={styles.profilePicture}
+                src="/assets/images/profile_pic.jpg"
+                alt="Profile Picture"
+                effect="blur"
+                visibleByDefault={true}
+              />
 
               <div className={styles.buttonArea}>
                 <a
