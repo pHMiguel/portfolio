@@ -97,7 +97,7 @@ const Home = () => {
                   {"//"}My goal with this portfolio is to encapsulate all my
                   qualities,
                   <br /> like being a music producer, photographer or a software
-                  developer in a simple and intuitive way. More on the Future.
+                  developer in a simple and intuitive way.
                 </p>
               </div>
             </div>
