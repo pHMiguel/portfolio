@@ -26,7 +26,7 @@ const BackgroundSelector: React.FC<BackgroundSelectorProps> = ({
           className={styles.categorySelector}
           onClick={() => handleBackgroundChange("1")}
         >
-          Supernova
+          Pulse
         </a>
         <a
           className={styles.categorySelector}
@@ -38,7 +38,7 @@ const BackgroundSelector: React.FC<BackgroundSelectorProps> = ({
           className={styles.categorySelector}
           onClick={() => handleBackgroundChange("3")}
         >
-          Pulse
+          Supernova
         </a>
       </div>
     </div>
