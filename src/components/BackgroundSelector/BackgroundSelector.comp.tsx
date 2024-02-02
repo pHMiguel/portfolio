@@ -38,7 +38,7 @@ const BackgroundSelector: React.FC<BackgroundSelectorProps> = ({
           className={styles.categorySelector}
           onClick={() => handleBackgroundChange("3")}
         >
-          Journey
+          Pulse
         </a>
       </div>
     </div>
