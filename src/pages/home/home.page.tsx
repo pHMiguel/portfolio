@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import styles from "./home.module.scss";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -102,13 +104,13 @@ const Home = () => {
               </div>
             </div>
             <div className={styles.profileCard}>
-              <LazyLoadImage
-                className={styles.profilePicture}
-                src="/assets/images/profile_pic.jpg"
-                alt="Profile Picture"
-                effect="blur"
-                visibleByDefault={true}
-              />
+              <picture>
+                <img
+                  className={styles.profilePicture}
+                  src="https://avatars.githubusercontent.com/u/88747428?v=4"
+                  alt="Profile Picture"
+                />
+              </picture>
 
               <div className={styles.buttonArea}>
                 <a
