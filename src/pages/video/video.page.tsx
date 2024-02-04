@@ -6,7 +6,7 @@ const Video = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const delay = 700;
+    const delay = 1000;
     const timeoutId = setTimeout(() => {
       setShowContent(true);
     }, delay);
@@ -18,7 +18,7 @@ const Video = () => {
       {showContent && (
         <div className={styles.wrapper}>
           <div className={styles.videoTitle}>
-            <h1 style={{ fontSize: " 2rem" }}>Video Projects</h1>
+            <h1>Video Projects</h1>
           </div>
           <div className={styles.contentArea}>
             <div className={styles.videoArea}>

@@ -15,7 +15,7 @@ const Home = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const delay = 700;
+    const delay = 1000;
     const timeoutId = setTimeout(() => {
       setShowContent(true);
     }, delay);

@@ -19,12 +19,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
   animation: fadeIn 1.5s ease;
+  margin: 1rem 0 2rem 0;
 }
 
 .videoTitle h1 {
-  margin: 2rem 0 4rem 0;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .contentArea {
@@ -37,21 +39,27 @@
 
 .videoArea {
   display: flex;
-  width: 100%;
-  height: 30rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: fadeIn 4s ease;
+  width: 100%;
+  height: 30rem;
 }
 
 @media (max-width: 1280px) {
+  .videoArea {
+    height: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
   .contentArea {
     flex-direction: column;
   }
 
   .videoArea {
-    height: 15rem;
+    height: 20rem;
   }
 }
 
