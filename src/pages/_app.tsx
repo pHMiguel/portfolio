@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <main>
         <LazyLoad offset={50}>
           <video
-            src="../assets/videos/bg_video_01TESTE.mp4"
+            src="../assets/videos/bg_video_01.mp4"
             autoPlay
             loop
             muted
