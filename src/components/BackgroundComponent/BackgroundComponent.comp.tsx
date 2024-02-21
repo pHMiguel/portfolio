@@ -15,6 +15,7 @@ const BackgroundComponent: React.FC<BackgroundComponentProps> = ({
         autoPlay
         loop
         muted
+        playsInline
         style={{
           position: "fixed",
           top: 0,
