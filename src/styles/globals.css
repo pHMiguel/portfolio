@@ -1,31 +1,18 @@
 body,
 html {
   margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
   color-scheme: dark;
+  padding: 1rem;
 }
 
 main {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1rem;
   overflow-y: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.LazyLoad {
-  opacity: 0;
-  transition: all 1s ease-out;
-}
-
-.is-visible {
-  opacity: 1;
 }
