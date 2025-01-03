@@ -8,7 +8,7 @@ const Navbar = () => {
         Aphonso Miguel.
       </Link>
 
-      <div className={styles.header}>
+      <div className={styles.headerLinks}>
         <Link href="/music" className={styles.categorySelector} replace>
           Discography.
         </Link>
@@ -24,6 +24,8 @@ const Navbar = () => {
           <span className={styles.span}>Under Development</span>
         </div>
       </div>
+
+      
     </div>
   );
 };

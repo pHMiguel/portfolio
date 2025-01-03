@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 import styles from "./home.module.scss";
 
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -10,6 +9,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import Music from "../music";
+import Video from "../video";
 
 const Home = () => {
   const [showContent, setShowContent] = useState(false);
@@ -150,6 +151,12 @@ const Home = () => {
                 </a>
               </div>
             </div>
+          </div>
+          <div className={styles.contentAreaMobile}>
+            <Music>
+            </Music>
+            <Video>
+            </Video>
           </div>
         </div>
       )}

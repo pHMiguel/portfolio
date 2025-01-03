@@ -110,6 +110,11 @@
     min-width: 40vw;
     animation: fadeIn 2s cubic-bezier(0.35, 0, 0.35, 0);
   }
+
+  .contentAreaMobile{
+  display: block;
+  width: 100%;
+  }
 }
 
 @media (min-width: 1281px) {
@@ -126,6 +131,10 @@
 
   .profileCard {
     animation: fadeIn 2s ease;
+  }
+
+  .contentAreaMobile{   
+    display: none;
   }
 }
 
