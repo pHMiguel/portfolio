@@ -27,10 +27,8 @@ const Home = () => {
     <div className={styles.container}>
       {showContent && (
         <div className={styles.wrapper}>
-          <div className={styles.aboutTitle}>
-            <h1 style={{ fontSize: " 4rem" }}>About Me.</h1>
-          </div>
-          <div className={styles.contentArea}>
+          <h1 className={styles.title}>About Me.</h1>
+          <div className={styles.contentAreaIntroduction}>
             <div className={styles.aboutTextWrapper}>
               <div className={styles.aboutText}>
                 <p
@@ -46,6 +44,7 @@ const Home = () => {
                   style={{
                     marginTop: "0",
                     marginBottom: "1rem",
+                    marginLeft: "1rem",
                     fontSize: " 1rem",
                     opacity: "0.5",
                   }}
@@ -59,17 +58,29 @@ const Home = () => {
                     fontSize: " 2rem",
                   }}
                 >
-                  Role: "Developer Front-End";
+                  Role: "Support Analyst Jr ";
+                </p>
+                <p
+                  style={{
+                    marginTop: "0",
+                    marginBottom: "0.5rem",
+                    marginLeft: "1rem",
+                    fontSize: " 1rem",
+                    opacity: "0.5",
+                  }}
+                >
+                  {"//"}Enterprise-Name: V2 Saúde;
                 </p>
                 <p
                   style={{
                     marginTop: "0",
                     marginBottom: "1rem",
+                    marginLeft: "1rem",
                     fontSize: " 1rem",
                     opacity: "0.5",
                   }}
                 >
-                  {"//"}FATEC Mogi das Cruzes - System Analysis & Development
+                  {"//"}University-Name: FATEC Mogi das Cruzes - System Analysis & Development;
                 </p>
                 <p
                   style={{
@@ -93,14 +104,14 @@ const Home = () => {
                   style={{
                     marginTop: "0",
                     marginBottom: "1rem",
+                    marginLeft: "1rem",
                     fontSize: " 1rem",
                     opacity: "0.5",
                   }}
                 >
                   {"//"}My goal with this portfolio is to encapsulate all my
-                  qualities,
-                  <br /> like being a music producer, photographer or a software
-                  developer in a simple and intuitive way.
+                  qualities, 
+                  <br/> showcasing my experiences and habilities in a simple and intuitive way.
                 </p>
               </div>
             </div>
