@@ -89,7 +89,6 @@
     flex-direction: column-reverse;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
   }
 
   .title {
@@ -101,7 +100,8 @@
   }
 
   .aboutText {
-    animation: textFadeHeight 1.5s ease;
+    animation: textFadeHeight 1.5s ease;  
+    padding: 1rem;
   }
 
   .aboutText p {
