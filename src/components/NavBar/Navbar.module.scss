@@ -1,10 +1,11 @@
 .container {
   display: flex;
-  width: 100%;
+  width: auto;
+  height: auto;
   flex-direction: column;
   align-items: center;
   animation: fade 2s ease;
-  margin-bottom: 3rem;
+  padding: 4rem 0 1rem 0;
 }
 
 .name {
@@ -12,115 +13,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
-  margin: 2rem 0;
-}
-
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 70%;
-  background: rgba(255, 255, 255, 0);
-  font-size: 1.2rem;
-}
-
-.categorySelector {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  opacity: 0.3;
-  transition: linear 1s;
-  text-align: center;
-}
-
-.categorySelector::after {
-  content: "";
-  position: absolute;
-  width: 40%;
-  background-color: white;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: -0.5rem;
-  left: 1;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.categorySelector:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.categorySelector:hover .span {
-  visibility: visible;
-  opacity: 1;
-}
-
-.categorySelector:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.span {
-  position: absolute;
-  background-color: rgb(0, 0, 0, 0.9);
-  text-align: center;
-  padding: 1rem 0;
-  border-radius: 6px;
-  z-index: 1;
-  top: auto;
-  left: auto;
-  opacity: 0;
-  transition: opacity 0.5s;
-  font-size: 1rem;
-  width: 100%;
-}
-
-.span:hover {
-  cursor: pointer;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@media (max-width: 1280px) {
-  .container {
-    margin-bottom: 3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    margin-bottom: 1rem;
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .span {
-    top: auto;
-    left: auto;
-    height: auto;
-    width: 70%;
-    font-size: 0.8rem;
-  }
-
-  .aboutText {
-    white-space: break;
-  }
+  margin: 0;
 }

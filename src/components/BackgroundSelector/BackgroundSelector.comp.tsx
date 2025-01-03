@@ -18,21 +18,21 @@ const BackgroundSelector: React.FC<BackgroundSelectorProps> = ({
   };
   return (
     <div className={styles.backgroundSelector}>
-      <a className={styles.backgroundButton}>
+      <div className={styles.backgroundButton}>
         <ColorLensIcon fontSize="large" />
-      </a>
+      </div>
       <div className={styles.backgroundOptions}>
         <a
           className={styles.categorySelector}
           onClick={() => handleBackgroundChange("1")}
         >
-          Pulse
+          Supernova
         </a>
         <a
           className={styles.categorySelector}
           onClick={() => handleBackgroundChange("2")}
         >
-          Supernova
+          Pulse
         </a>
         <a
           className={styles.categorySelector}

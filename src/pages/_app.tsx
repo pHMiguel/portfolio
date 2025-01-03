@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
   };
 
   return (
-    <div className={raleway.className}>
+    <div className={raleway.className}>   
       <Head>
         <title>{"Aphonso Portfolio"}</title>
         <meta
@@ -31,6 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <BackgroundComponent videoSrc="../assets/videos/bg_video_01.mp4" />
         )}
         {selectedBackground === "2" && (
+          
           <BackgroundComponent videoSrc="../assets/videos/bg_video_02.mp4" />
         )}
         {selectedBackground === "3" && (
