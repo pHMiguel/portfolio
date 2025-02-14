@@ -25,7 +25,7 @@ const Music = () => {
               <ReactPlayer
                 url="https://soundcloud.com/ph_miguel/tracks"
                 width={"90%"}
-                height={"30rem"}
+                height={"27rem"}
               />
             </div>
             <div className={styles.playlistArea}>
@@ -36,11 +36,11 @@ const Music = () => {
               <ReactPlayer
                 url="https://soundcloud.com/miguel_ph/tracks"
                 width={"90%"}
-                height={"30rem"}
+                height={"27rem"}
               />
             </div>
+            </div>
           </div>
-        </div>
       )}
     </div>
   );
